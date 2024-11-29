@@ -79,8 +79,10 @@ http://127.0.0.1:5000/api/v1/retrain
 @app.route('/webhook', methods = ['POST'])
 def webhook():
     # Ruta al repositorio donde se realizará el pull
-    path_repo = '/home/lucaszv/myFlaskApp'
-    servidor_web = '/var/www/lucaszv_pythonanywhere_com_wsgi.py'
+    # path_repo = '/home/lucaszv/myFlaskApp'
+    # servidor_web = '/var/www/lucaszv_pythonanywhere_com_wsgi.py'
+    path_repo = '/home/mardelmir1/myFlaskApp'
+    servidor_web = '/var/www/mardelmir1_pythonanywhere_com_wsgi.py'
 
     # Comprueba si la solicitud POST contiene datos JSON
     if request.is_json:
